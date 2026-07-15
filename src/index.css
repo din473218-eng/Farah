@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-cinzel: "Cinzel", serif;
+  
+  --color-gold-50: #fbf8f2;
+  --color-gold-100: #f4edd9;
+  --color-gold-200: #e7d6b3;
+  --color-gold-300: #d6ba83;
+  --color-gold-400: #c29c5a;
+  --color-gold-500: #c5a880;
+  --color-gold-600: #ac8345;
+  --color-gold-700: #8c6431;
+  --color-gold-800: #6d4b24;
+  --color-gold-900: #2c2121;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-neutral-800 bg-[#FAF7F5] overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom scrollbar to match the salon design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AC8345;
+}
+
+/* Custom styles for animations or subtle overlays */
+.luxury-gradient {
+  background: linear-gradient(135deg, #FFF9F8 0%, #FAF1F0 50%, #FAF6F0 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #E7D6B3 0%, #C5A880 50%, #AC8345 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #AC8345 0%, #C5A880 50%, #AC8345 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Farah Beauty Salon",
+  "description": "A luxurious, modern, and elegant beauty salon offering professional hair, makeup, skincare, and nail services in a relaxing, premium environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
